@@ -28,7 +28,7 @@ final class CustomView: UIView {
         dropShadow(color: .lightGray, opacity: 1, offSet: CGSize(width: 1, height: 1), radius: 20, scale: true)
     }
     
-    private func dropShadow(color: UIColor, opacity: Float = 0.5, offSet: CGSize, radius: CGFloat = 1, scale: Bool = true) {
+    func dropShadow(color: UIColor, opacity: Float = 0.5, offSet: CGSize, radius: CGFloat = 1, scale: Bool = true) {
         layer.masksToBounds = false
         layer.shadowColor = color.cgColor
         layer.shadowOpacity = opacity
